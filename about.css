@@ -55,7 +55,7 @@ background:  linear-gradient( rgb(6, 191, 179) 0%, rgba(15, 85, 199, 0.83) 98%);
 
 
 #intro-3 {display:flex;flex-wrap: wrap;align-items: center;
-    padding: 50px;
+    padding:0 10px;
     gap: 20px;background-color: rgba(165, 165, 166, 0.111);
     justify-content: center;}
     
@@ -69,12 +69,66 @@ border-radius: 4px;padding: 4px;}
     background-color:rgb(197, 197, 197);color: black;}
 #intro-3 div img{transition: 0.5s ease;cursor: pointer;border: 2px solid transparent;}
 
-#intro-3 div:hover img{
-    border: 2px solid rgb(0, 0, 0);}
 
 
 
 
+
+
+
+
+
+
+      
+    #father{
+        border: 0.1px solid rgba(0, 0, 0, 0.151);
+
+      border-radius: 10px;
+     
+      position: relative;
+      display: flex;justify-content: center;
+      align-items: center;
+  overflow: hidden;
+  /* flex-grow: 1; */
+  
+transition: 0.3s ease-in-out;
+  
+      min-width: 12vw;min-height:14vw;}
+
+      #father:hover{scale: 0.98;}
+
+@media (max-width: 710px)
+{#father{flex-grow: 1;}}
+
+
+
+#gengen::before{content: " ";
+    background-color: rgb(255, 255, 255);
+  inset: 1.1px;
+  z-index: -1;
+  border-radius: 10px;
+  
+  position: absolute;}
+  
+  #gengen::after{content: " ";
+  background-color:rgb(255, 0, 0);
+  width: 500px;height: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -2;
+  position: absolute;
+  animation: aymen 30s linear infinite;
+  animation-play-state: running;
+  
+  }
+  
+  #gengen:hover::after{animation-play-state: paused;}
+  @keyframes aymen {
+  
+    0% {transform: translate(-50%,-50%) rotate(0deg);}
+    100% {transform: translate(-50%,-50%) rotate(360deg);}
+  }
 
 
 
@@ -88,9 +142,9 @@ border-radius: 4px;padding: 4px;}
     justify-content: center;
     gap: 2px;
     display: flex;
-    padding:4px;
+    padding: 0 4px;
     overflow: hidden;
-margin: 1rem 0 4rem;
+margin: 1rem 0 10rem;
     }
     #box-1{
         background-image: url(mission.jpg);
@@ -238,49 +292,11 @@ margin: 1rem 0 4rem;
 
       
       
-      
-        #father{
-            border: 1px solid whitesmoke;
 
-          border-radius: 10px;
-          background-color: rgba(0, 0, 0, 0.036);
-          position: relative;
-          display: flex;justify-content: center;
-          align-items: center;
-      overflow: hidden;
-      flex-grow: 1;
-          width: 200px;height: 250px;}
 
 
 
       
-      #gengen::before{content: " ";
-        background-color: rgb(255, 255, 255);
-      inset: 3px;
-      z-index: -1;
-      border-radius: 10px;
-      
-      position: absolute;}
-      
-      #gengen::after{content: " ";
-      background-color: rgba(0, 68, 255, 0.892);
-      width: 500px;height: 40px;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
-      z-index: -2;
-      position: absolute;
-      animation: aymen 30s linear infinite;
-      animation-play-state: running;
-      
-      }
-      
-      #gengen:hover::after{animation-play-state: paused;}
-      @keyframes aymen {
-      
-        0% {transform: translate(-50%,-50%) rotate(0deg);}
-        100% {transform: translate(-50%,-50%) rotate(360deg);}
-      }
 
 
 
