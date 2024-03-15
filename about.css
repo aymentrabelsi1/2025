@@ -95,7 +95,7 @@ transition: 0.3s ease-in-out;
   
       min-width: 12vw;min-height:14vw;}
 
-      #father:hover{scale: 0.98;}
+      #father:hover{scale: 0.90;}
 
 @media (max-width: 710px)
 {#father{flex-grow: 1;}}
@@ -111,7 +111,7 @@ transition: 0.3s ease-in-out;
   position: absolute;}
   
   #gengen::after{content: " ";
-  background-color:rgb(255, 0, 0);
+    background-color:rgb(188, 188, 188);
   width: 500px;height: 40px;
   left: 50%;
   top: 50%;
